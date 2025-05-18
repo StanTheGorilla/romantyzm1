@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Romantyzm - Zaawansowana Nauka (Poprawiona)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Romantyzm - Zaawansowana Platforma Naukowa</h1>
+    </header>
+
+    <nav>
+        <button onclick="showSection('home', this)">Start</button>
+        <button onclick="showSection('notes', this)">Rozbudowane Notatki</button>
+        <button onclick="showSection('flashcards', this)">Fiszki (Kategorie)</button>
+        <button onclick="showSection('quiz', this)">Quiz</button>
+        <button onclick="showSection('test', this)">Test</button>
+    </nav>
+
+    <div class="container">
+        <!-- Sekcja "Start" jest domyślnie aktywna w HTML -->
+        <section id="home" class="content-section active">
+            <h2>Witaj na Zaawansowanej Platformie do Nauki o Romantyzmie!</h2>
+            <p>Ta strona została stworzona, aby umożliwić Ci dogłębne poznanie polskiego romantyzmu. Znajdziesz tu:</p>
+            <ul>
+                <li><strong>Rozbudowane Notatki:</strong> Szczegółowe analizy epoki, pojęć i wybranych dzieł literackich, z uwzględnieniem motywów, kontekstów, analizy i interpretacji.</li>
+                <li><strong>Fiszki z Kategoriami:</strong> Możliwość wyboru zakresu materiału do powtórek, np. tylko pojęcia lub dzieła konkretnego autora.</li>
+                <li><strong>Quizy i Testy:</strong> Narzędzia do sprawdzania i utrwalania wiedzy.</li>
+            </ul>
+            <p>Celem jest dostarczenie kompleksowych materiałów w przystępnej, interaktywnej formie. Wybierz sekcję z menu, aby rozpocząć.</p>
+        </section>
+
+        <section id="notes" class="content-section">
+            <h2>Rozbudowane Notatki z Romantyzmu</h2>
+            <div id="notes-layout">
+                <aside id="notes-sidebar">
+                    <h3>Tematy Główne</h3>
+                    <ul id="notes-topic-list">
+                        <!-- Tematy dynamicznie wstawiane przez JS -->
+                    </ul>
+                </aside>
+                <div id="notes-content-container">
+                    <article id="notes-content">
+                        <p>Wybierz temat z listy po lewej stronie, aby wyświetlić szczegółowe notatki. Dla wybranych dzieł znajdziesz pogłębione analizy.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="flashcards" class="content-section">
+            <h2>Fiszki (Podział na Kategorie)</h2>
+            <div id="flashcard-categories">
+                <label for="flashcard-category-select">Wybierz kategorię:</label>
+                <select id="flashcard-category-select" onchange="initFlashcards()">
+                    <!-- Opcje dynamicznie wstawiane przez JS -->
+                </select>
+            </div>
+            <p id="flashcard-instruction">Kliknij na fiszkę, aby ją odwrócić. Użyj przycisków do nawigacji.</p>
+            <div class="flashcard-container" onclick="flipFlashcard()">
+                <div class="flashcard" id="flashcard">
+                    <div class="flashcard-face flashcard-front" id="flashcard-front"></div>
+                    <div class="flashcard-face flashcard-back" id="flashcard-back"></div>
+                </div>
+            </div>
+            <div class="flashcard-nav">
+                <button onclick="prevFlashcard(event)">Poprzednia</button>
+                <span class="flashcard-counter" id="flashcard-counter-display"></span>
+                <button onclick="nextFlashcard(event)">Następna</button>
+            </div>
+        </section>
+
+        <section id="quiz" class="content-section">
+            <h2>Quiz</h2>
+            <div id="quiz-content">
+                <div class="progress-indicator" id="quiz-progress"></div>
+                <div class="quiz-question" id="quiz-question-text"></div>
+                <div class="quiz-options" id="quiz-options-buttons"></div>
+                <div id="quiz-feedback-text" class="quiz-feedback"></div>
+                <button id="quiz-next-button" onclick="nextQuizQuestion()" style="display:none;">Następne pytanie</button>
+            </div>
+            <div class="quiz-results" id="quiz-results-text" style="display:none;"></div>
+        </section>
+
+        <section id="test" class="content-section">
+            <h2>Test</h2>
+             <div id="test-content">
+                <div class="progress-indicator" id="test-progress"></div>
+                <div class="test-question" id="test-question-text"></div>
+                <div class="test-options" id="test-options-buttons"></div>
+                <div id="test-feedback-text" class="test-feedback"></div>
+                <button id="test-next-button" onclick="nextTestQuestion()" style="display:none;">Następne pytanie</button>
+            </div>
+            <div class="test-results" id="test-results-text" style="display:none;"></div>
+        </section>
+    </div>
+
+    <footer>
+        <p>© 2024 Romantyzm - Zaawansowana Platforma Naukowa. Wersja demonstracyjna.</p>
+    </footer>
+
+    <!-- Skrypty JavaScript - UWAGA: data.js został usunięty -->
+    <script src="notes.js" defer></script>
+    <script src="flashcards.js" defer></script>
+    <script src="quiz.js" defer></script>
+    <script src="test.js" defer></script>
+    <script src="app.js" defer></script>     <!-- Główna logika aplikacji ładowana na końcu lub po modułach, od których zależy -->
+</body>
+</html>
