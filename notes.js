@@ -246,9 +246,9 @@ const romanticismNotes = {
         <h3>Melancholia i nadzieja</h3>
         <p>Wiersz jest melancholijny, ale zawiera nuty nadziei na wieczność uczucia.</p>
     `, // <--- PRZECINEK
-    "Słowacki - Liryki Lozańskie (Nad wodą wielką i czystą...)": `
-        <h4>Juliusz Słowacki - Liryki Lozańskie (w tym "Nad wodą wielką i czystą...") (powst. 1838-1839) <span class="source-citation">[59]</span></h4>
-        <p>Liryki Lozańskie to cykl wierszy Juliusza Słowackiego powstałych podczas jego pobytu w Lozannie, w Szwajcarii, nad Jeziorem Genewskim, w latach 1838-1839. Jest to okres względnego spokoju w życiu poety, sprzyjający refleksji i kontemplacji natury. Wiersze te charakteryzują się niezwykłą klarownością obrazowania, melodyjnością i głębią filozoficznej zadumy.</p>
+    "Mickiewicz - Liryki Lozańskie (Nad wodą wielką i czystą...)": `
+        <h4> Mickiewicz - Liryki Lozańskie (w tym "Nad wodą wielką i czystą...") (powst. 1838-1839) <span class="source-citation">[59]</span></h4>
+        <p>Liryki Lozańskie to cykl wierszy Adama Mickiewicza powstałych podczas jego pobytu w Lozannie, w Szwajcarii, nad Jeziorem Genewskim, w latach 1838-1839. Jest to okres względnego spokoju w życiu poety, sprzyjający refleksji i kontemplacji natury. Wiersze te charakteryzują się niezwykłą klarownością obrazowania, melodyjnością i głębią filozoficznej zadumy.</p>
         <strong class="subsection-title">"Nad wodą wielką i czystą..." - Analiza szczegółowa:</strong>
         <p>Ten krótki, zaledwie trzyzwrotkowy wiersz jest jednym z najbardziej znanych i cenionych liryków lozańskich, uznawany za arcydzieło poezji kontemplacyjnej.</p>
         <ul>
